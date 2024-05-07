@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import Footer from "@/components/footer";
-import Section5 from "@/components/section5";
+import Section3 from "@/components/section3";
 
 const theme = createTheme({
   palette: {
@@ -13,11 +13,11 @@ const theme = createTheme({
   },
 });
 
-export default function Work() {
+export default function Category() {
   return (
     <ThemeProvider theme={theme} children={undefined}>
       <Header isDashboard={false} />
-      <Section5 />
+      <Section3 />
       <Footer />
     </ThemeProvider>
   );

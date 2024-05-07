@@ -4,6 +4,7 @@ import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import Footer from "@/components/footer";
 import Section2 from "@/components/section2";
+import Section4 from "@/components/section4";
 
 const theme = createTheme({
   palette: {
@@ -15,9 +16,10 @@ const theme = createTheme({
 
 export default function ReadMore() {
   return (
-    <ThemeProvider theme={theme}>
-      <Header />
+    <ThemeProvider theme={theme} children={undefined}>
+      <Header isDashboard={false} />
       <Section2 />
+      <Section4 />
       <Footer />
     </ThemeProvider>
   );

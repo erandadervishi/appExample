@@ -10,6 +10,8 @@ import Section4 from "@/components/section4";
 import Section5 from "@/components/section5";
 import Section6 from "@/components/section6";
 
+const isDashboard = true;
+
 const theme = createTheme({
   palette: {
     primary: { main: "#1a2e35" },
@@ -21,8 +23,8 @@ const theme = createTheme({
 export default function Home() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Header />
+      <ThemeProvider theme={theme} children={undefined}>
+        <Header isDashboard={isDashboard} />
         <Section1 />
         <Section2 />
         <Section3 />

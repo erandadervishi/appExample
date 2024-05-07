@@ -11,11 +11,19 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 
-const Header = () => {
+interface HeaderProps {
+  isDashboard: boolean;
+}
+
+const Header = ({ isDashboard }: HeaderProps) => {
   return (
     <AppBar
-      position="absolute"
-      sx={{ background: "transparent", padding: "10px", boxShadow: "none" }}
+      position={isDashboard ? "absolute" : "relative"}
+      sx={{
+        background: isDashboard ? "transparent" : "#1a2e35",
+        padding: "10px",
+        boxShadow: "none",
+      }}
     >
       <Box
         sx={{
