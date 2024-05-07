@@ -81,41 +81,46 @@ const Footer = () => {
           >
             USEFUL LINKS
           </Typography>
-          <Link
-            href="#"
-            color="inherit"
-            underline="hover"
-            sx={{ fontSize: "18px" }}
-          >
-            Home
-          </Link>
-          <br />
-          <Link
-            href="#"
-            color="inherit"
-            underline="hover"
-            sx={{ fontSize: "18px" }}
-          >
-            About
-          </Link>
-          <br />
-          <Link
-            href="#"
-            color="inherit"
-            underline="hover"
-            sx={{ fontSize: "18px" }}
-          >
-            Work
-          </Link>
-          <br />
-          <Link
-            href="#"
-            color="inherit"
-            underline="hover"
-            sx={{ fontSize: "18px" }}
-          >
-            Category
-          </Link>
+          <Box mb={2}>
+            <Link
+              href="#"
+              color="inherit"
+              underline="hover"
+              sx={{ fontSize: "18px" }}
+            >
+              Home
+            </Link>
+          </Box>
+          <Box mb={2}>
+            <Link
+              href="#"
+              color="inherit"
+              underline="hover"
+              sx={{ fontSize: "18px" }}
+            >
+              About
+            </Link>
+          </Box>
+          <Box mb={2}>
+            <Link
+              href="#"
+              color="inherit"
+              underline="hover"
+              sx={{ fontSize: "18px" }}
+            >
+              Work
+            </Link>
+          </Box>
+          <Box>
+            <Link
+              href="#"
+              color="inherit"
+              underline="hover"
+              sx={{ fontSize: "18px" }}
+            >
+              Category
+            </Link>
+          </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Typography
